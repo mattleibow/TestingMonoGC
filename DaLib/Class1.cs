@@ -7,31 +7,15 @@ namespace TestingGarbage
 	{
 		public static readonly ConcurrentDictionary<IntPtr, WeakReference> instances = new ConcurrentDictionary<IntPtr, WeakReference>();
 
-		private IntPtr _hnd;
 		private bool isDisposed;
 
 		public SKObject(IntPtr handle)
 		{
 			Handle = handle;
+			RegisterHandle(handle, this);
 		}
 
-		public IntPtr Handle
-		{
-			get => _hnd;
-			protected set
-			{
-				if (value == IntPtr.Zero)
-				{
-					DeregisterHandle(_hnd, this);
-					_hnd = value;
-				}
-				else
-				{
-					_hnd = value;
-					RegisterHandle(_hnd, this);
-				}
-			}
-		}
+		public IntPtr Handle { get; set; }
 
 		public static void RegisterHandle(IntPtr handle, SKObject instance)
 		{
@@ -84,6 +68,7 @@ namespace TestingGarbage
 				return;
 			isDisposed = true;
 
+			DeregisterHandle(Handle, this);
 			Handle = IntPtr.Zero;
 		}
 
