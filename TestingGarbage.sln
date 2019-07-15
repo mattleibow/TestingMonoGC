@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingGarbage", "TestingGarbage\TestingGarbage.csproj", "{B0BD70FF-2AA1-4FF3-9A19-0FC1E9FF4F05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreTests", "NetCoreTests\NetCoreTests.csproj", "{3DCBCC7E-6567-4AFB-B5CC-1D8FDA13737B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DaLib", "DaLib\DaLib.csproj", "{319A8D5D-3D09-4CEE-843D-E762FAF0DF9B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0BD70FF-2AA1-4FF3-9A19-0FC1E9FF4F05}.Debug|x86.ActiveCfg = Debug|x86
+		{B0BD70FF-2AA1-4FF3-9A19-0FC1E9FF4F05}.Debug|x86.Build.0 = Debug|x86
+		{B0BD70FF-2AA1-4FF3-9A19-0FC1E9FF4F05}.Release|x86.ActiveCfg = Release|x86
+		{B0BD70FF-2AA1-4FF3-9A19-0FC1E9FF4F05}.Release|x86.Build.0 = Release|x86
+		{3DCBCC7E-6567-4AFB-B5CC-1D8FDA13737B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3DCBCC7E-6567-4AFB-B5CC-1D8FDA13737B}.Debug|x86.Build.0 = Debug|Any CPU
+		{3DCBCC7E-6567-4AFB-B5CC-1D8FDA13737B}.Release|x86.ActiveCfg = Release|Any CPU
+		{3DCBCC7E-6567-4AFB-B5CC-1D8FDA13737B}.Release|x86.Build.0 = Release|Any CPU
+		{319A8D5D-3D09-4CEE-843D-E762FAF0DF9B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{319A8D5D-3D09-4CEE-843D-E762FAF0DF9B}.Debug|x86.Build.0 = Debug|Any CPU
+		{319A8D5D-3D09-4CEE-843D-E762FAF0DF9B}.Release|x86.ActiveCfg = Release|Any CPU
+		{319A8D5D-3D09-4CEE-843D-E762FAF0DF9B}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
